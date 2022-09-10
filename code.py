@@ -43,6 +43,7 @@ cnn = tf.keras.models.Sequential()
 cnn.add(tf.keras.layers.Conv2D(filters=32, kernel_size=3, activation='relu', input_shape=[64, 64, 3]))
 
 ### Step 2 - Pooling
+## use for dimentionatility reduction
 
 cnn.add(tf.keras.layers.MaxPool2D(pool_size=2, strides=2))
 
